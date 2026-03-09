@@ -67,10 +67,10 @@ products.product_id = order_items.product_id
 ## Example SQL Query
 
 ```sql
-SELECT p.category,
-SUM(oi.quantity * p.price) AS revenue
-FROM order_items oi
-JOIN products p
-ON oi.product_id = p.product_id
+SELECT a.category,
+SUM(b.quantity * a.price) AS revenue
+FROM order_items b
+JOIN products a
+ON b.product_id = a.product_id
 GROUP BY p.category;
 
