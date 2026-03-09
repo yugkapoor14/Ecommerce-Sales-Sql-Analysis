@@ -43,7 +43,6 @@ quantity
 8. Most expensive product in each category  
 9. Latest order placed by each customer  
 
----
 
 
 ON oi.product_id = p.product_id
